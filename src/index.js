@@ -22,7 +22,7 @@ module.exports = (() => {
                 'No StyleSheet available.',
             ],
             [ // test arguments
-                ([selector, ruleset].some(param => typeof param === 'string' && param.length) && ruleset.startsWith('{') && ruleset.endsWith('}')),
+                ([selector, ruleset].every(param => typeof param === 'string' && param.length) && ruleset.startsWith('{') && ruleset.endsWith('}')),
                 'Arguments error.',
             ],
         ].every((condition) => {
