@@ -8,16 +8,10 @@ module.exports = {
     ],
     'rules': {
         'no-console': 0,
-        'indent': [
-            'error',
-            4,
-        ],
-        'max-len': [
-            'error',
-            {
-                'ignoreComments': true,
-                'code': 160,
-            },
-        ],
+        'indent': ['error', 4],
+        'max-len': ['error', {
+            'ignoreComments': true,
+            'code': 160,
+        }],
     },
 };

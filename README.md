@@ -67,6 +67,14 @@ selectorInjector.inject(selector[, ruleset]);
     selectorInjector.getInjectedList();
     ```
 
+## Compatibility
+
+Internet Explorer 11+
+
+Firefox 45+
+
+Chrome 50+
+
 ## License
 
 MIT

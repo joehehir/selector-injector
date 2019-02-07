@@ -10,7 +10,7 @@
  * @license  MIT
  */
 
-module.exports = (() => {
+export default (() => {
     const styleSheet = [...document.styleSheets].find(sheet => (sheet.disabled === false && sheet.media.mediaText !== 'print'));
     const injectedRulesets = {}; // 22: [ '.app-title', '{ font-weight: 800; }' ],
 

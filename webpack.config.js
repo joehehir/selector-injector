@@ -1,5 +1,4 @@
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const pkg = require('./package.json');
 
 module.exports = {
@@ -7,31 +6,21 @@ module.exports = {
         app: './src/index.js',
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
         filename: `${pkg.name}.min.js`,
         library: pkg.name,
+        libraryExport: 'default',
         libraryTarget: 'umd',
+        path: path.resolve(__dirname, 'dist'),
         umdNamedDefine: true,
     },
-    optimization: {
-        minimizer: [
-            new UglifyJsPlugin({
-                sourceMap: true,
-                parallel: true,
-                cache: true,
-            }),
-        ],
-    },
     module: {
-        rules: [
-            {
-                test: /\.js$/,
-                use: [
-                    'babel-loader',
-                    'eslint-loader',
-                ],
-                exclude: /node_modules/,
-            },
-        ],
+        rules: [{
+            exclude: /node_modules/,
+            test: /\.js$/,
+            use: [
+                'babel-loader',
+                'eslint-loader',
+            ],
+        }],
     },
 };
