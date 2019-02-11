@@ -20,11 +20,25 @@ Append, modify and remove CSS rulesets dynamically. No additional DOM nodes requ
 $ npm install selector-injector
 ```
 
+Via browser:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/selector-injector@latest"></script>
+```
+
 ## Usage
 
 ### Import
 ```js
 import selectorInjector from 'selector-injector';
+```
+
+Via browser:
+
+```html
+<script>
+const selectorInjector = window['selector-injector'];
+</script>
 ```
 
 ### API
