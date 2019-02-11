@@ -37,7 +37,7 @@ Via browser:
 
 ```html
 <script>
-const selectorInjector = window['selector-injector'];
+const selectorInjector = window['selector-injector']();
 </script>
 ```
 
