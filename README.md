@@ -37,7 +37,7 @@ Via browser:
 
 ```html
 <script>
-const selectorInjector = window['selector-injector']();
+const selectorInjector = window['selector-injector'];
 </script>
 ```
 
@@ -63,13 +63,13 @@ selectorInjector.inject(selector[, ruleset]);
 
     ```js
     // append ruleset
-    selectorInjector.inject('.app-title', '{ background-color: #333; }');
+    selectorInjector.inject('#app', '{ background-color: #333; }');
 
     // modify ruleset
-    selectorInjector.inject('.app-title', '{ background-color: #FFF; color: #333; }');
+    selectorInjector.inject('#app', '{ background-color: #FFF; color: #333; }');
 
     // remove ruleset
-    selectorInjector.inject('.app-title');
+    selectorInjector.inject('#app');
     ```
 
 #### getInjectedList()
