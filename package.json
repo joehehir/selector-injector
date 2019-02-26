@@ -1,6 +1,6 @@
 {
   "name": "selector-injector",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Append, modify and remove CSS rulesets dynamically. No additional DOM nodes required.",
   "main": "./dist/selector-injector.min.js",
   "author": "Joe Hehir <hello@joehehir.com>",

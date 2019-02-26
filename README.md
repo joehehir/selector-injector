@@ -5,8 +5,6 @@ Append, modify and remove CSS rulesets dynamically. No additional DOM nodes requ
 * Injected rulesets are appended to an existing in-memory StyleSheet.
 * Original rulesets are not modified, only overridden by order or specificity.
 
-[![jsDelivr hits/month][jsDelivr-hits-badge]][jsDelivr-hits-url]
-
 ## Installation
 
 ```sh
