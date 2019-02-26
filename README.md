@@ -1,4 +1,4 @@
-# selector-injector [![npm downloads/total][npm-downloads-badge]][npm-downloads-url] [![jsDelivr hits/month][jsDelivr-hits-badge]][jsDelivr-hits-url]
+# selector-injector
 
 ```
               __          __                   _         _           __
@@ -90,6 +90,9 @@ Chrome 50+
 ## License
 
 MIT
+
+[//]: # ([![npm downloads/total][npm-downloads-badge]][npm-downloads-url])
+[//]: # ([![jsDelivr hits/month][jsDelivr-hits-badge]][jsDelivr-hits-url])
 
 [npm-downloads-badge]: https://img.shields.io/npm/dt/selector-injector.svg?style=rounded
 [npm-downloads-url]: https://www.npmjs.com/package/selector-injector
