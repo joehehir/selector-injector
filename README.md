@@ -1,14 +1,5 @@
 # selector-injector
 
-```
-              __          __                   _         _           __
-   ________  / /__  _____/ /_____  _____      (_)___    (_)__  _____/ /_____  _____
-  / ___/ _ \/ / _ \/ ___/ __/ __ \/ ___/_____/ / __ \  / / _ \/ ___/ __/ __ \/ ___/
- (__  )  __/ /  __/ /__/ /_/ /_/ / /  /_____/ / / / / / /  __/ /__/ /_/ /_/ / /
-/____/\___/_/\___/\___/\__/\____/_/        /_/_/ /_/_/ /\___/\___/\__/\____/_/
-                                                  /___/
-```
-
 Append, modify and remove CSS rulesets dynamically. No additional DOM nodes required.
 
 * Injected rulesets are appended to an existing in-memory StyleSheet.
