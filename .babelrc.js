@@ -7,7 +7,7 @@ module.exports = {
                 'explorer': 11,
                 'firefox': 45,
             },
-        }]
+        }],
     ],
     'overrides': [{
         'sourceType': 'unambiguous',

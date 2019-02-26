@@ -1,4 +1,4 @@
-# selector-injector
+# selector-injector [![npm downloads/total][npm-downloads-badge]][npm-downloads-url] [![jsDelivr hits/month][jsDelivr-hits-badge]][jsDelivr-hits-url]
 
 ```
               __          __                   _         _           __
@@ -35,10 +35,8 @@ import selectorInjector from 'selector-injector';
 
 Via browser:
 
-```html
-<script>
+```js
 const selectorInjector = window['selector-injector'];
-</script>
 ```
 
 ### API
@@ -92,3 +90,8 @@ Chrome 50+
 ## License
 
 MIT
+
+[npm-downloads-badge]: https://img.shields.io/npm/dt/selector-injector.svg?style=rounded
+[npm-downloads-url]: https://www.npmjs.com/package/selector-injector
+[jsDelivr-hits-badge]: https://data.jsdelivr.com/v1/package/npm/selector-injector/badge?style=rounded
+[jsDelivr-hits-url]: https://www.jsdelivr.com/package/npm/selector-injector

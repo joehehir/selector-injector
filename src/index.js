@@ -1,18 +1,12 @@
 /*!
- *               __          __                   _         _           __
- *    ________  / /__  _____/ /_____  _____      (_)___    (_)__  _____/ /_____  _____
- *   / ___/ _ \/ / _ \/ ___/ __/ __ \/ ___/_____/ / __ \  / / _ \/ ___/ __/ __ \/ ___/
- *  (__  )  __/ /  __/ /__/ /_/ /_/ / /  /_____/ / / / / / /  __/ /__/ /_/ /_/ / /
- * /____/\___/_/\___/\___/\__/\____/_/        /_/_/ /_/_/ /\___/\___/\__/\____/_/
- *                                                   /___/
- * @author   Joe Hehir <hello@joehehir.com>
+ * @name     selector-injector
  * @homepage https://github.com/joehehir/selector-injector
  * @license  MIT
  */
 
 export default (() => {
-    const styleSheet = [...document.styleSheets].find(sheet => (sheet.disabled === false && sheet.media.mediaText !== 'print'));
-    const injectedRulesets = {}; // 22: '#app',
+    const styleSheet = [...document.styleSheets].find(sheet => sheet.disabled === false && sheet.media.mediaText !== 'print');
+    const injectedRulesets = {}; // { index: selector }
 
     const valid = (selector, ruleset) => {
         const warn = error => console.error(`[selector-injector warn]: Error:\n\u0009\u003E ${error}`);
@@ -22,7 +16,7 @@ export default (() => {
                 'No StyleSheet available.',
             ],
             [ // test arguments
-                ([selector, ruleset].every(param => typeof param === 'string' && param.length) && RegExp(/^[{][^]*[}]$/igm).test(ruleset)),
+                ([selector, ruleset].every(param => typeof param === 'string' && param.length) && ruleset.startsWith('{') && ruleset.endsWith('}')),
                 'Arguments error.',
             ],
         ].every((condition) => {
@@ -52,7 +46,7 @@ export default (() => {
         injectedRulesets[index] = selector;
     };
 
-    const getInjectedList = () => Object.keys(injectedRulesets).map(index => styleSheet.cssRules[index] || null);
+    const getInjectedList = () => Object.keys(injectedRulesets).map(index => styleSheet.cssRules[index] || []);
 
     return {
         getInjectedList,

@@ -1,6 +1,6 @@
 {
   "name": "selector-injector",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Append, modify and remove CSS rulesets dynamically. No additional DOM nodes required.",
   "main": "./dist/selector-injector.min.js",
   "author": "Joe Hehir <hello@joehehir.com>",
@@ -26,16 +26,16 @@
     "build": "webpack --mode production"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
+    "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
-    "eslint": "^5.13.0",
+    "eslint": "^5.14.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-import": "^2.16.0",
     "uglifyjs-webpack-plugin": "^2.1.1",
-    "webpack": "^4.29.0",
+    "webpack": "^4.29.5",
     "webpack-cli": "^3.2.1"
   },
   "dependencies": {
